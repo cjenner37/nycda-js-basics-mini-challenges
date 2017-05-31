@@ -28,7 +28,7 @@ console.log(interests[2][0]);
 Write a script that checks if a variable captured from a prompt is less than 100. If it is, alert the user that 
 their variable is less than 100. If it is not alert the user of what the value was and that it was greater than 100.
 */
-var your_number = prompt("Please enter a number.")
+var your_number = parseInt(prompt("Please enter a number for problem #3:"));
 
 if (your_number < 100) {
 	alert("It's less than 100!");
@@ -39,34 +39,24 @@ if (your_number < 100) {
 4.
 Try running the script and then changing the variable's value to see how this affects the program's output.
 */
-var test_variable = "4"
-if ( test_variable === 4 ){
-	alert("it's the same!");
-} else {
-	alert("your variables are different :(");
-}
+var your_number = parseInt(prompt("Please enter a number for problem #4: "));
 
+your_number += 50;
 
-if ( test_variable === "4" ){
-	alert("it's the same!");
+if (your_number < 100) {
+	alert("It's less than 100!");
 } else {
-	alert("your strings are different :(");
+	alert("It's more than 100, you chose " + your_number);
 }
 /*
 5.
 Write a similar script to check if a string stored in a variable is the same as another string.
 */
-var test_string = "Sonntheen?"
-if ( test_string === "Something?" ){
-	alert("it's the same!");
+var q5_prompt = parseInt(prompt("What's 2 + 2?"))
+if ( q5_prompt === 4 ){
+	alert("Very good!");
 } else {
-	alert("your strings are different :(");
-}
-
-if ( test_string === "Sonntheen?" ){
-	alert("it's the same!");
-} else {
-	alert("your strings are different :(");
+	alert("You're wrong :(");
 }
 /*
 6.
@@ -79,7 +69,7 @@ function echo(name){
 
 echo("Jeff");
 /*
-6.
+7.
 Declare a function that takes no arguments but prints something to the console. Try running it after it has been 
 declared.
 */
@@ -89,6 +79,7 @@ function talk() {
 
 talk();
 /*
+8.
 Declare a function that depending upon which virtual 'door' was entered tells the user they've received a different 
 'prize' in an alert. After declaring the function, try running it with different options. There must be at least 3 
 doors.
